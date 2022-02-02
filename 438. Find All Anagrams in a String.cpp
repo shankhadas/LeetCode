@@ -6,8 +6,8 @@ class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
         vector<int> ans;
-        vector<int> hash(6,0);
-        vector<int> phash(6,0);
+        vector<int> hash(26,0);
+        vector<int> phash(26,0);
         int window = p.size();
         int slen = s.size();
         if(slen<window)
