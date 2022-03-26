@@ -14,10 +14,11 @@ public:
                 left++;
             else right--;
         }
-        vector<int> res;
-        res.push_back(left+1);
-        res.push_back(right+1);
-        return res;
+        // vector<int> res;
+        // res.push_back(left+1);
+        // res.push_back(right+1);
+        // return res;
+        return {left+1, right+1};
     }
 };
 
