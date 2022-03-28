@@ -2,11 +2,6 @@
 
 using namespace std;
 
-/*
-    Time Complexity :- BigO(NlogN)
-    Space Complexity :- BigO(1)
-*/
-
 class Solution {
 public:
     vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
