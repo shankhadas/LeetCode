@@ -14,7 +14,7 @@ public:
         }
         for(auto &i : s2){
             if(s1.count(i) == 0)
-                res[0].push_back(i);
+                res[1].push_back(i);
         }
         return res;
     }
