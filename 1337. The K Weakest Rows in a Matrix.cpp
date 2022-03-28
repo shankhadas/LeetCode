@@ -4,7 +4,7 @@ using namespace std;
 
 /*
     Time Complexity :- BigO(NlogN)
-    Space Complexity :- BigO(1)
+    Space Complexity :- BigO(N)
 */
 
 class Solution {
