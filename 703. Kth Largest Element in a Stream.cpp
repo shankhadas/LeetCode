@@ -14,7 +14,7 @@ public:
     
     int add(int val) {
         auto it = lower_bound(v.begin(), v.end(), val);
-        v.insert(it, val;)
+        v.insert(it, val);
         return v[v.size() - k];
     }
 };
