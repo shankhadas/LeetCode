@@ -28,7 +28,7 @@ int main()
 {
     vector<int> nums = {-1,3,2,0};
     Solution sol;
-    bool n=sol.find132pattern(stones);
+    bool n=sol.find132pattern(nums);
     cout << n << " ";
     
     cout<<endl;
