@@ -28,10 +28,13 @@ public:
             if(--str2.first > 0)
                 pq.push(str2);   
         }
-        if(pq.size() == 1 && pq.top().first > 1)
-            return "";
-        if(pq.size() == 1 && pq.top().first == 1)
-            return ans += pq.top().second;
+        if(pq.size() == 1){
+            if(pq.top().first > 1)
+                ans = "";
+            if(pq.top().first == 1)
+                ans += pq.top().second;
+        }
+        return ans;
     }
 };
 
