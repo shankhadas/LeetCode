@@ -65,7 +65,7 @@ public:
 
 int main()
 {
-    int num = 1234567;
+    int num = 12345670;
 
     Solution sol;
     string res=sol.numberToWords(num);
