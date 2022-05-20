@@ -14,12 +14,12 @@ public:
     }
     
     int maxSubArray(vector<int>& nums) {
-        int max_nums = maximum(nums, nums.size());
+        int max_num = maximum(nums, nums.size());
         int res = 0;
         int max_till = 0;
         
-        if(max_nums < 0)
-            return max_nums;
+        if(max_num < 0)
+            return max_num;
         for(int i=0; i<nums.size(); i++){
             max_till += nums[i];
             max_till = max(max_till, 0);
