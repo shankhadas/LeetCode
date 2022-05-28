@@ -5,6 +5,10 @@ using namespace std;
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
+        long n = nums.size();
+        return n * (n+1) / 2 - accumulate(begin(nums), end(nums), 0);
+        
+        /*
         int size = nums.size();
         int res = size*(size+1)/2;
         int sum =0;
@@ -12,6 +16,7 @@ public:
             sum +=nums[i];
         }
         return res-sum;
+        */
     }
 };
 
