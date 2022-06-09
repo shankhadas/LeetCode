@@ -28,8 +28,9 @@ int main()
     int target = 9;
     
     Solution sol;
-    int n=sol.twoSum(numbers, target);
-    cout << n << " ";
+    vector<int> res=sol.twoSum(numbers, target);
+    for(auto i : res)
+        cout << i << " ";
     
     cout<<endl;
     return 0;
