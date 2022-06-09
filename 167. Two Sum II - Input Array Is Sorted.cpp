@@ -12,7 +12,8 @@ public:
         while(numbers[left] + numbers[right] != target) {
             if (numbers[left] + numbers[right] < target)
                 left++;
-            else right--;
+            else 
+                right--;
         }
         // vector<int> res;
         // res.push_back(left+1);
@@ -24,9 +25,15 @@ public:
 
 int main()
 {
-    vector<int> numbers = {2,7,11,15};
-    int target = 9;
-    
+    // vector<int> numbers = {2,7,11,15};
+    // int target = 9;
+    // vector<int> numbers = {2,3,4};
+    // int target = 6;
+    // vector<int> numbers = {0,0,3,4};
+    // int target = 0;
+    vector<int> numbers = {1,2,3,4,4,9,56,90};
+    int target = 8;
+
     Solution sol;
     vector<int> res=sol.twoSum(numbers, target);
     for(auto i : res)
