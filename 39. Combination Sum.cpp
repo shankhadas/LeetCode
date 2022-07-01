@@ -4,42 +4,49 @@ using namespace std;
 
 class Solution {
 public:
-    void Sum(vector<int>& candidates, int target, vector<vector<int> >& res, vector<int>& r, int i)
-    {
-        
-        if(target == 0)
-        {
-            // if we get exact answer
-            res.push_back(r);
+    void findCombination(int idx, int target, vector<int>& candidates, vector<vector<int>>& ans, vector<int> ds){
+        if(idx == candidates.size()){
+            if(target == 0){
+                ans.push_back(ds);
+            }
             return;
         }
-        
-        while(i <  candidates.size() && target - candidates[i] >= 0)
-        {
-            // Till every element in the array starting
-            // from i which can contribute to the target
-            r.push_back(candidates[i]);// add them to vector
-            
-            // recur for next numbers
-            Sum(candidates,target - candidates[i],res,r,i);
-            ++i;
-            
-            // Remove number from vector (backtracking)
-            r.pop_back();
+
+        if(candidates[idx] <= target){
+            ds.push_back(candidates[idx]);
+            findCombination(idx, target-candidates[idx], candidates, ans, ds);
+            ds.pop_back();
         }
+        findCombination(idx+1, target, candidates, ans, ds);
     }
-    
+
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        sort(candidates.begin(),candidates.end()); // sort candidates array
-        
-        // remove duplicates
-        candidates.erase(unique(candidates.begin(),candidates.end()),candidates.end());
-        
-        vector<int> r;
-        vector<vector<int> > res;
-        
-        Sum(candidates,target,res,r,0);
-        
-        return res;
+        vector<vector<int>> ans;
+        vector<int> ds;
+        findCombination(0, target, candidates, ans, ds);
+        return ans;
     }
 };
+
+int main()
+{
+    // #ifndef ONLINE_JUDGE
+    // freopen("input.txt", "r", stdin); 
+    // freopen("output.txt", "w", stdout);
+    // #endif
+    
+    vector<int> candidates = {2,3,6,7};
+    int target = 7;
+    
+    Solution sol;
+    vector<vector<int>> res = sol.combinationSum(candidates, target);
+    for(int i=0; i<res.size(); i++){
+        for(int j=0; j<res[i].size(); j++){
+            cout << res[i][j] << " ";
+        }
+        cout << endl;
+    }
+            
+    cout<<endl;
+    return 0;
+}
