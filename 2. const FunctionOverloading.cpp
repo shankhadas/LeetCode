@@ -19,6 +19,9 @@ class Test{
 
         void print(int* val) { cout << *val << endl; }          // 2. valid : call by pointer
         void print(const int* val) { cout << *val << endl; }
+
+        void check() { cout << "Non-constant" << endl; }          // 3. valid : const and non-const
+        void check() const { cout << "Constant" << endl; }
 };
 
 int main() {
@@ -31,6 +34,11 @@ int main() {
 
     t.print(&k); // 2
     t.print(&p);
+
+    Test t1; // 3
+    const Test t2;
+    t1.check();
+    t2.check();
 
     return 0;
 }
