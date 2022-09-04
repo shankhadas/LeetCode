@@ -13,11 +13,12 @@ using namespace std;
 
 class Base {
     int x;
+    int y;
 public:
-    Base(int a) { x = a; }
+    Base(int a, int b) { x = a; y = b; }
 
-    Base(int a):x{a} {}
-    Base(int a):x(a) {}
+    Base(int a, int b):x{a}, y{b} {}
+    Base(int a, int b):x(a), y(b) {}
     // better to use {} instead of () as {} will throw warning
     // used for narrowing and {} will give an error
 
