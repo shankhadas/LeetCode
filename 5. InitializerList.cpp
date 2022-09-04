@@ -25,7 +25,7 @@ public:
 };
 
 int main() {
-    Base b(10);
+    Base b(10, 20);
 
     return 0;
 }
