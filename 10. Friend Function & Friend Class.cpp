@@ -11,7 +11,7 @@ using namespace std;
     6. friendship isn't inherited.
 */
 
-
+        // Friend Function
 class Base {
     int x;
 public:
@@ -36,7 +36,7 @@ int main() {
     return 0;
 }
 
-
+        // Friend Class
 class Base {
     int x;
 public:
