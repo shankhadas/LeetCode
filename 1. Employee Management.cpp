@@ -64,6 +64,7 @@ class System {
 
 public:
     System() {}
+    
     void registerEmployee(Employee&);
     void registerManager(int, int);
     void printDetails(int);
