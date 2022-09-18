@@ -8,7 +8,7 @@
 # Implementation
 Define an interface or an abstract class for creating object but let the subclass decide which class to initiate.
 
-![Alt text](/factory_method.png?raw=true "Optional Title")
+![Alt text](/Factory%20Method/factory_method.png?raw=true "Optional Title")
 
 # Pros and Cons
 - ✔️ You avoid tight coupling between the creator and the concrete products.
