@@ -7,11 +7,11 @@
     
 # Implementation
 Define an interface or an abstract class for creating object but let the subclass decide which class to initiate.
-![Alt text](/Factory\ Method/FactoryMethod.png?raw=true "Optional Title")
+![Alt text](/Factory Method/FactoryMethod.png?raw=true "Optional Title")
 
 # Pros and Cons
-✔️ You avoid tight coupling between the creator and the concrete products.
-✔️ Single Responsibility Principle. Codes are distributed bades on their functionalities.
-✔️ Open/Closed Principle. We can introduce new types of toy category into the program without breaking existing client code.
-❌  The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern.
-❌  The best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes.
+- ✔️ You avoid tight coupling between the creator and the concrete products.
+- ✔️ Single Responsibility Principle. Codes are distributed bades on their functionalities.
+- ✔️ Open/Closed Principle. We can introduce new types of toy category into the program without breaking existing client code.
+- ❌  The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern.
+- ❌  The best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes.
