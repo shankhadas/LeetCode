@@ -11,8 +11,8 @@
 - **Code example** in one of the popular programming languages makes it easier to grasp the idea behind the pattern.
 
 # Classification of patterns
-**Creational** patterns provide object creation mechanisms that increase flexibility and reuse of existing of existing code.
-**Structural** patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
-**Behavioral** patterns take care of effective communication and the assignment of responsibilities between objects.
+- **Creational** patterns provide object creation mechanisms that increase flexibility and reuse of existing of existing code.
+- **Structural** patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
+- **Behavioral** patterns take care of effective communication and the assignment of responsibilities between objects.
 
 ![Alt text](/design_patterns.png?raw=true "Optional Title")
