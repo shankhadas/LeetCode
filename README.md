@@ -16,3 +16,5 @@
 - **Behavioral** patterns take care of effective communication and the assignment of responsibilities between objects.
 
 ![Alt text](/design_patterns.png?raw=true "Optional Title")
+
+**PS:** The **Interpreter (Behavioral)** is probably the least used and most complicated of all the GoF patterns.
