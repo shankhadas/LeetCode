@@ -5,12 +5,13 @@
 - One and only instance.
 - Global access.
 - No ownership : no one would be owner of that object, it would be freely floating here and there. Anyone want that object they'll just use it.
-- Lazy initialization.
+- Lazy initialization : means only when I need the object then & there I can create it. Otherwise I won't waste my resources.
 
 # Advantages
 - **Save memory:** only one is required so why to create so many?
 - **Single Access Point:** Logger, Database connection etc.
 - **Flexibility:** change anytime you want to.
+
 **PS:** it's a replacement of GLOBAL variable.
 
 # When to use

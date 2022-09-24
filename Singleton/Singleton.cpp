@@ -2,15 +2,15 @@
 using namespace std;
 
 class GameSettings {
-    static GameSettings* instance;
+    static GameSettings* instance;  // static member
     int brightness;
     int height;
     int width;
     
-    GameSettings():height(720), width(1080), brightness(75) {}
+    GameSettings():height(720), width(1080), brightness(75) {}  // private constructor
     // all constructors should be private or public(iff you want to allow inheritance)
 public:
-    static GameSettings* getInstance() {
+    static GameSettings* getInstance() {    // static function
         if(instance == NULL)
             instance = new GameSettings();
         return instance;
