@@ -2,6 +2,11 @@
 
 using namespace std;
 
+/*
+    TC: ~O((2^n)*n)
+    SC: O(n)
+*/
+
 class Solution {
 public:
     void printF(int idx, vector<int>& ds, int arr[], int n){
@@ -15,9 +20,9 @@ public:
             return;
         }
         ds.push_back(arr[idx]);
-        printF(idx+1, ds, arr, n);
+        printF(idx+1, ds, arr, n);  // pick 1st element in the array
         ds.pop_back();
-        printF(idx+1, ds, arr, n);
+        printF(idx+1, ds, arr, n);  // not pick 1st element in the array
     }
 };
 
