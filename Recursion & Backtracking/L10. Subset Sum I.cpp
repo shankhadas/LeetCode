@@ -2,6 +2,11 @@
 
 using namespace std;
 
+/*
+    TC: O(2^n)
+    SC: O(2^n)
+*/
+
 class Solution {
 public:
     void findSubsetSum(int ind, int sum, vector<int>& candidates, int n, vector<int>& ans){
