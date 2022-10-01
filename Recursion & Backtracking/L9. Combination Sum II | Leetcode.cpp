@@ -16,7 +16,7 @@ public:
         }
 
         for(int i=ind; i<candidates.size(); i++){
-            if(i>ind && candidates[i] == candidates[i-1])
+            if(i>ind && candidates[i] == candidates[i-1])   // no need to pick same element twice from the array
                 continue;
             if(candidates[i] > target)
                 break;
