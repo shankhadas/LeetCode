@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+
+/*
+    TC: O(n! * n)
+    SC: O(n) + O(n)
+*/
                             
 class Solution {
 public:
