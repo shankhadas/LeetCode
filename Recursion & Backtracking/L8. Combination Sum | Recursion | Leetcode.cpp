@@ -2,6 +2,11 @@
 
 using namespace std;
 
+/*
+    TC: ~O((2^t)*k)
+    SC: O(n)
+*/
+
 class Solution {
 public:
     void findCombination(int idx, int target, vector<int>& candidates, vector<vector<int>>& ans, vector<int> ds){
