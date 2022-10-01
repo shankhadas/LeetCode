@@ -2,6 +2,10 @@
 
 using namespace std;
 
+/*
+    TC: ~O((2^n)*n)
+    SC: O(n)
+*/
 class Solution {
 public:
     void printS(int idx, vector<int>& ds, int s, int sum, int arr[], int n){
@@ -15,11 +19,11 @@ public:
         }
         ds.push_back(arr[idx]);
         s += arr[idx];
-        printS(idx+1, ds, s, sum, arr, n);
+        printS(idx+1, ds, s, sum, arr, n);  // pick
 
         ds.pop_back();
         s -= arr[idx];
-        printS(idx+1, ds, s, sum, arr, n);
+        printS(idx+1, ds, s, sum, arr, n);  // not pick
     }
 };
 
