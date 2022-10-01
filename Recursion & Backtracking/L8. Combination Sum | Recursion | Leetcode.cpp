@@ -4,7 +4,7 @@ using namespace std;
 
 /*
     TC: ~O((2^t)*k)
-    SC: O(n)
+    SC: O(k * x)
 */
 
 class Solution {
