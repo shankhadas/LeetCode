@@ -16,7 +16,6 @@ public:
             if(coins > 0 && coins >= costs[i]){
                 coins -= costs[i];
                 ans++;
-                cout <<"\n"<< costs[i]<<"->"<<coins<<"\n";
             }
         }
         return ans;
