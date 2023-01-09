@@ -33,7 +33,7 @@ Space complexity: O(N)
 
 int main()
 {
-    vector<int> points = {{1,1},{2,2},{3,3}};
+    vector<vector<int>> points = {{1,1},{2,2},{3,3}};
 
     Solution sol;
     cout << sol.maxPoints(points) << "\n";
