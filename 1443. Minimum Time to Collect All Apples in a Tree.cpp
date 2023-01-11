@@ -17,7 +17,8 @@ Space complexity: O(N)
             // childTime > 0 indicates subtree of child has apples. Since the root node of the
             // subtree does not contribute to the time, even if it has an apple, we have to check it
             // independently.
-            if (childTime || hasApple[child]) totalTime += childTime + 2;
+            if (childTime || hasApple[child]) 
+                totalTime += childTime + 2;
         }
 
         return totalTime;
