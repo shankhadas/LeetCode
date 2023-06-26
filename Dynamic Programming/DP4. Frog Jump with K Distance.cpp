@@ -71,3 +71,8 @@ int main(){
 
     return 0;
 }
+
+/*--------------------------------------Space Optimized---------------
+    TC: O(N * k)
+    SC: O(N) if k==N then it'll be the same as the above approach. So not needed for this.
+*/
