@@ -56,5 +56,3 @@
 ![Alt text](/images/selfjoin13.png?raw=true "Optional Title")
 ![Alt text](/images/selfjoin14.png?raw=true "Optional Title")
 ![Alt text](/images/selfjoin15.png?raw=true "Optional Title")
-
-**PS:** The **Interpreter (Behavioral)** is probably the least used and most complicated of all the GoF patterns.
