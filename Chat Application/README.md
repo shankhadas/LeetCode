@@ -13,8 +13,10 @@
 ![Alt text](/images/chat_app.png?raw=true "Optional Title")
 ![Alt text](/images/chat_app1.png?raw=true "Optional Title")
 ![Alt text](/images/chat_app2.png?raw=true "Optional Title")
+
 **Now the DB becomes circular dependent** 
 ![Alt text](/images/chat_app3.png?raw=true "Optional Title")
+
 **Changes**
 - As message is related to conversation so no need to relate it to conatct.
 - Also _to_nember_ field is removed as messages aren't sent to a single number.
