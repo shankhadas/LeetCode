@@ -24,3 +24,11 @@
 
 - Final
 ![Alt text](/images/erd_so_db.png?raw=true "Optional Title")
+
+- **Future Scope:**
+    - Moderation: like flagging or removing them
+    - Badges
+    - Closing questions
+    - Post history
+    - Related posts
+    - Suggested edits
