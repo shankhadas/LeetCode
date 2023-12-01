@@ -16,7 +16,7 @@ public:
         for(string s: word2) {
             str2 += s;
         }
-        return str1 == str2; //something
+        return str1 == str2;
     }
 };
 
