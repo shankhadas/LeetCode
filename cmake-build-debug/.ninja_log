@@ -1,0 +1,13 @@
+# ninja log v5
+735	771	1701541689170993632	new_target	904bc0ecf3202e27
+0	689	1701538930605473909	CMakeFiles/target.dir/1662._Check_If_Two_String_Arrays_are_Equivalent.cpp.o	10760c51557c78cf
+0	717	1701451651287706343	CMakeFiles/new_target.dir/1662._Check_If_Two_String_Arrays_are_Equivalent.cpp.o	ade6977dc4199bf3
+0	12	1703195861454869607	build.ninja	3709225b4b21f51f
+0	721	1701370048039875350	CMakeFiles/new_target.dir/1._Two_Sum.cpp.o	aad587605e0d962d
+0	860	1701538384906377036	CMakeFiles/21.ValidParentheses.cpp.dir/1662._Check_If_Two_String_Arrays_are_Equivalent.cpp.o	2b579a4b32cc9bb
+0	795	1701451549976613475	CMakeFiles/21.ValidParentheses.cpp.dir/20._Valid_Parentheses.cpp.o	a4f9b3ecd8edd14
+0	735	1701541689134993748	CMakeFiles/new_target.dir/1160._Find_Words_That_Can_Be_Formed_by_Characters.cpp.o	94174c7802defff4
+860	909	1701538384954377578	21.ValidParentheses.cpp	cd908b5d550793c
+0	738	1701369999718927415	CMakeFiles/new_target.dir/1.Two_Sum.cpp.o	1f5a58a3b571dde2
+689	723	1701538930641473972	target	664ae262bd9bae92
+0	757	1701369748469984002	CMakeFiles/new_target.dir/1.TwoSum.cpp.o	87cf9f62ec5e7ca5
