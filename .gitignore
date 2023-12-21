@@ -1,2 +1,5 @@
 # exclude everything except directory
 .vscode
+.idea
+CMakeLists.txt
+cmake-build-debug
