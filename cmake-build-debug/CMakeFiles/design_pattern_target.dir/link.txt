@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/design_pattern_target.dir/Singleton/Singleton.cpp.o -o design_pattern_target 
