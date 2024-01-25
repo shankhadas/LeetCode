@@ -10,10 +10,10 @@ public:
     int longestCommonSubsequence(string text1, string text2) {
         int text1Length = text1.size(), text2Length = text2.size();
         // Create a 2D array to store lengths of common subsequence at each index.
-        int dp[text1Length + 1][text2Length + 1] = {};
+        int dp[text1Length + 1][text2Length + 1];
 
         // Initialize the 2D array with zero.
-        // memset(dp, 0, sizeof dp);
+        memset(dp, 0, sizeof dp);
         // int dp[text1Length + 1][text2Length + 1] = {};
 
         // Loop through both strings and fill the dp array.
