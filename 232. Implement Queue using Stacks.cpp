@@ -10,37 +10,25 @@ public:
     }
     
     void push(int x) {
+        while (!s1.empty()) {
+            s2.push(s1.top());
+            s1.pop();
+        }
         s1.push(x);
+        while (!s2.empty()) {
+            s1.push(s2.top());
+            s2.pop();
+        }
     }
     
     int pop() {
-        while(!s1.empty()) {
-            s2.push(s1.top());
-            s1.pop();
-        }
-        // cout << "from pop; " << s2.size() << endl;
-        int element = s2.top();
-        s2.pop();
-        while(!s2.empty()) {
-            s1.push(s2.top());
-            s2.pop();
-        }
-        return element;
-        
+        int temp = s1.top();
+        s1.pop();
+        return temp;
     }
     
     int peek() {
-        while(!s1.empty()) {
-            s2.push(s1.top());
-            s1.pop();
-        }
-        // cout << "from peek : " << s2.size() << endl;
-        int element = s2.top();
-        while(!s2.empty()) {
-            s1.push(s2.top());
-            s2.pop();
-        }
-        return element;
+        return s1.top();
     }
     
     bool empty() {
