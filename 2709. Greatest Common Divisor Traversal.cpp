@@ -53,8 +53,9 @@ public:
     }
 };
 
-int main() {
-    vector<int> nums = {2,3,6};
+int main()
+{
+  vector<int> nums = {2,3,6};
 
   Solution sol;
   bool res = sol.canTraverseAllPairs(nums);
