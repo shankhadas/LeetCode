@@ -11,7 +11,7 @@ public:
         vector<int> t;
         for (int i = 0; i < nums.size(); i++)
             t.push_back(nums[i] * nums[i]);             // Square each element.
-        sort(t.begin(), t.end());                  // Sort the squared values.
+        sort(t.begin(), t.end());                 // Sort the squared values.
         return t;
     }
 };
